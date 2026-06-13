@@ -163,7 +163,7 @@ Insight (strictly from the passage only):"""
     response = ollama.chat(
         model="qwen3:8b",
         messages=[{"role": "user", "content": prompt}],
-        options={"think": False}   # disables thinking mode, much faster
+        # options={"think": False}   # disables thinking mode, much faster
     )
     return response["message"]["content"]
 
